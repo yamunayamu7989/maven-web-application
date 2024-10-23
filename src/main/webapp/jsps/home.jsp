@@ -1,51 +1,83 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ page import="java.net.*" %>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Lendi Institute of Engineering and Technology - Home Page</title>
-<link href="images/lendilogo.jpg" rel="icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lendi Institute of Engineering & Technology</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #004080;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .navbar {
+            background-color: #003366;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #0059b3;
+        }
+        .hero {
+            text-align: center;
+            background-color: #0056b3;
+            color: white;
+            padding: 20px 0;
+            font-size: 24px;
+        }
+        .footer {
+            background-color: #004080;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
-<body style="background-color: #f0f8ff;"> <!-- Updated with a light blue background color -->
-<h1 align="center">Welcome to Lendi Institute of Engineering and Technology, Ph No: 089222 41666, Vizag-Viziangaram Road-NH-43, Denkada, Jonnada, Andhra Pradesh 535005</h1>
-<h1 align="center"> Lendi Institute - A Premier Training Center for DevOps with AWS, Terraform & AWS Solution Architect & Terraform in Andhra Pradesh. Providing Real-Time Scenarios</h1>
-<hr>
-<br>
-<h1><h3> Server Side IP Address </h3><br>
+<body>
 
-<% 
-String ip = "";
-InetAddress inetAddress = InetAddress.getLocalHost();
-ip = inetAddress.getHostAddress();
-out.println("Server Host Name :: "+inetAddress.getHostName()); 
-%>
-<br>
-<%out.println("Server IP Address :: "+ip);%>
-</h1>
-<br>
-<h1><h3> Client Side IP Address </h3><br>
-<%out.print( "Client IP Address :: " + request.getRemoteAddr() ); %><br>
-<%out.print( "Client Name Host :: "+ request.getRemoteHost() );%><br></h1>
-<hr>
-<div style="text-align: center;">
-    <span>
-        <img src="images/lendilogo.jpg" alt="" width="100">
-    </span>
-    <span style="font-weight: bold;">
-        Lendi Institute of Engineering and Technology,
-        Vizag-Viziangaram Road-NH-43, Denkada, Jonnada, Andhra Pradesh 535005
-        +91-089222 41666
-        <br>
-        <a href="mailto:info@lendi.org">Mail to Lendi Institute</a>
-    </span>
+<header>
+    <h1>Lendi Institute of Engineering & Technology</h1>
+    <p>An Autonomous Institution Approved by AICTE & Permanently Affiliated to JNTU Gurajada, Vizianagaram</p>
+</header>
+
+<div class="navbar">
+    <a href="#home">Home</a>
+    <a href="#administration">Administration</a>
+    <a href="#academics">Academics</a>
+    <a href="#autonomous">Autonomous</a>
+    <a href="#research">Research</a>
+    <a href="#amenities">Amenities</a>
+    <a href="#activities">Activities</a>
+    <a href="#placements">Placements</a>
+    <a href="#contact">Contact Us</a>
+    <a href="#virtualtour">Virtual Tour</a>
+    <a href="#ecorner">eCorner</a>
 </div>
-<hr>
-    <p> Service : <a href="services/employee/getEmployeeDetails">Get Employee Details</a> </p>
-<hr>
-<hr>
-<p align=center>Lendi Institute of Engineering and Technology - Consultant, Training, Development Center.</p>
-<p align=center><small>Copyrights 2022 by <a href="http://lendi.org/">Lendi Institute of Engineering and Technology</a> </small></p>
+
+<div class="hero">
+    <p>16 Years of Glory...</p>
+</div>
+
+<footer class="footer">
+    <p>&copy; 2024 Lendi Institute of Engineering & Technology</p>
+</footer>
 
 </body>
 </html>
